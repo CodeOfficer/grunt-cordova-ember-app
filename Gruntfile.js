@@ -55,6 +55,9 @@ module.exports = function(grunt) {
 
     neuter: {
       app: {
+        options: {
+          filepathTransform: function(filepath){ return 'lib/js/' + filepath; }
+        },
         files: {'www/app.js': ['lib/js/**/*.js']}
       },
       test: {
