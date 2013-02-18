@@ -23,6 +23,8 @@ module.exports = function(grunt) {
         globals: {
           // app
           App:        true,
+          // stackexchange
+          SE:         true,
           // neuter
           require:    true,
           // jquery
@@ -78,6 +80,7 @@ module.exports = function(grunt) {
     concat: {
       vendor: {
         files: {'www/vendor.js': [
+          'lib/vendor/js/stackexchange.js',
           'lib/vendor/js/jquery.js',
           'lib/vendor/js/handlebars.js',
           'lib/vendor/js/ember.js',
