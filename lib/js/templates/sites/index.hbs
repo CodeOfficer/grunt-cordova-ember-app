@@ -1,0 +1,8 @@
+{{#each site in controller}}
+  <div>
+    <image {{bindAttr src="site.favicon_url"}}>
+    {{site.name}}
+  </div>
+{{else}}
+  <div>No sites found</div>
+{{/each}}
