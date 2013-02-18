@@ -11,3 +11,11 @@ https://api.stackexchange.com/docs/authentication
 http://enable-cors.org/
 http://enable-cors.org/client.html
 http://www.html5rocks.com/en/tutorials/cors/
+
+
+Example staackexchange meta data in json payload
+-------------------------
+has_more: true
+items: Array[30]
+quota_max: 10000
+quota_remaining: 9952
