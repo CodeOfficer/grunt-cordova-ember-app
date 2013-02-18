@@ -27,6 +27,7 @@ module.exports = function(grunt) {
           require:    true,
           // jquery
           jQuery:     true,
+          $:          true,
           // ember
           Ember:      true,
           Em:         true,
