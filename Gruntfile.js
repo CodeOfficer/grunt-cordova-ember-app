@@ -64,6 +64,9 @@ module.exports = function(grunt) {
         files: {'www/app.js': ['lib/js/**/*.js']}
       },
       test: {
+        options: {
+          filepathTransform: function(filepath){ return 'test/' + filepath; }
+        },
         files: {'www/tests.js': ['test/specHelper.js', 'test/support/**/*.js', 'test/specs/**/*.js']}
       }
     },
