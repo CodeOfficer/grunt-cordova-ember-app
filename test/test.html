@@ -15,9 +15,10 @@
   <script>
     mocha.ui('bdd');
     mocha.reporter('html');
-    mocha.setup({globals: [
-      'XMLHttpRequest',
-    ]});
+    mocha.setup({
+      // ignoreLeaks: true,
+      globals: ['XMLHttpRequest']
+    });
 
     expect = chai.expect;
     assert = chai.assert;
