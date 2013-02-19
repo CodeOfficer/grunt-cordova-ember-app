@@ -1,6 +1,7 @@
 
 Ember.testing = true;
-Ember.run.begin();
+
+// before ...
 
 before(function(){
   Ember.run(function() {
