@@ -34,6 +34,8 @@ module.exports = function(grunt) {
           Ember:      true,
           Em:         true,
           DS:         true,
+          // sinon
+          sinon:      true,
           // mocha
           describe:   true,
           before:     true,
