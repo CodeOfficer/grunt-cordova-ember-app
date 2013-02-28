@@ -1,3 +1,5 @@
+<div>sites/index.hbs</div>
+
 {{#each site in controller}}
   <div>
     {{#linkTo "sites.site" site}}<image {{bindAttr src="site.favicon_url"}}>{{/linkTo}}
