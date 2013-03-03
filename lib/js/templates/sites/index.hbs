@@ -2,7 +2,7 @@
 
 {{#each site in controller}}
   <div>
-    {{#linkTo "sites.site" site}}<image {{bindAttr src="site.favicon_url"}}>{{/linkTo}}
+    {{#linkTo "sites.site" site}}<image {{bindAttr src="site.faviconUrl"}}>{{/linkTo}}
     {{#linkTo "sites.site" site}}{{site.name}}{{/linkTo}}
   </div>
 {{else}}
