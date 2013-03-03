@@ -34,6 +34,8 @@ module.exports = function(grunt) {
           Ember:      true,
           Em:         true,
           DS:         true,
+          // fastclick
+          FastClick:  true,
           // sinon
           sinon:      true,
           // mocha
@@ -85,6 +87,7 @@ module.exports = function(grunt) {
     concat: {
       vendor: {
         files: {'www/vendor.js': [
+          'lib/vendor/js/fastclick.js',
           'lib/vendor/js/stackexchange.js',
           'lib/vendor/js/jquery.js',
           'lib/vendor/js/handlebars.js',
