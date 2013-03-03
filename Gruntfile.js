@@ -71,7 +71,7 @@ module.exports = function(grunt) {
         options: {
           filepathTransform: function(filepath){ return 'test/' + filepath; }
         },
-        files: {'www/tests.js': ['test/specHelper.js', 'test/support/**/*.js', 'test/specs/**/*.js']}
+        files: {'www/tests.js': ['test/specHelper.js', 'test/support/**/*.js', 'test/lib/**/*.js']}
       }
     },
 
@@ -127,7 +127,7 @@ module.exports = function(grunt) {
 
     watch: {
       files: ['Gruntfile.js', 'lib/**/*', 'test/**/*'],
-      tasks: ['app', 'test', 'notify:www']
+      tasks: ['app', 'test', 'vendor', 'notify:www']
     }
 
   });
